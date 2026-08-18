@@ -1,8 +1,9 @@
-import java.util.Date;
+import java.time.ZonedDateTime;
+import java.time.ZoneId;
 
 public class Main {
     public static void main(String[] args) {
-        Date currentDate = new Date();
-        System.out.println("Hello, Dosti! Current date: " + currentDate);
+        ZonedDateTime currentDate = ZonedDateTime.now(ZoneId.of("Asia/Kolkata"));
+        System.out.println("Hello, India! Current date and time: " + currentDate);
     }
 }
