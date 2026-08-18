@@ -1,10 +1,10 @@
-# (1) Pull a base images which gives all the required tools & Libraries. ( Use a Java 21 base image that already contains the JDK and required Java tools )
+# (1) Pull a Java 21 base image that already contains the JDK and required Java tools
 FROM amazoncorretto:21
-
-# (2) Create a folder where the app code will be stored (working directory)    
+  
+# (2) Set the working directory inside the container (where the app code will be stored)
 WORKDIR /app
 
-# (3) Copy source code from HOST machine into the container 
+# (3) Copy Java source code from HOST to CONTAINER
 COPY src/Main.java /app/Main.java
 
 # (4) Compile the Java code  
