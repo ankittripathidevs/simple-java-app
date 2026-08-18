@@ -1,2 +1,2 @@
-# Simple-java-docker
-A simple java app that runs on docker
+# Simplej Java Docker App
+- simple java app that runs on docker
